@@ -17,79 +17,104 @@
     </div>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
     <div id="title">Luxi Wang</div><br>
-    <div id="links">
-        <a href="#skills">skills</a>
-        <a href="#work" style="margin:0px 60px;">works</a>
-        <a href="#contact">contact</a>
-    </div>
+        <div id="links">
+            <a href="#resume">my resume</a>
+            <a href="#skills">about me</a>
+            <a href="#work" style="margin:0px 60px;">works</a>
+            <a href="#contact">contact</a>
+        </div>
     </div>
 
     <center>
     <div id="middle">
         <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
             Hello, this is Luxi. Nice to meet you. <br>
-            <button class="btn_one">Find more about me</button>
+            <button class="btn_one"> 
+                <div id="temp">
+                <a href="#resume" style="margin:0px 60px;">Find more about me</a>
+            </div>
+            </button>
         </div>
     </div>
     </center>
 
-    <center>
-            <div id='resume'>
-                    <iframe src='luxisresume.pdf' height="600" width="1000" >
-                    </iframe>
-                </div>
-    </center>
+   
     
 
 
 
     <div id="portfolio">
+        <div id='resume'>
+        <h1>My Resume</h1><br>
+        <center>
+            <iframe src='luxisresume.pdf' height="600" width="1000" >
+            </iframe>
+        </center>
+         </div>
              <div id="skills">
-                 <h1>skills.</h1>   
+                 <h1>About me</h1>   
                  <div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate. Sed tortor enim, rhoncus vel mauris vitae, elementum condimentum augue. Donec fermentum lobortis lectus, in feugiat turpis faucibus et. Pellentesque luctus metus vitae augue lobortis sagittis vitae sit amet enim. Morbi egestas velit ac arcu fermentum lacinia. Nullam eget hendrerit neque. Cras et laoreet ante. Vivamus condimentum euismod commodo. Nulla pulvinar, turpis vitae condimentum tempor, ex ex eleifend quam, et maximus sapien mi sed est. Donec elit mi, dictum nec magna quis, mollis sollicitudin ligula. Maecenas ullamcorper ante vel ullamcorper mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            I am a third year Computer Science and Mathematics student at University of Washington. 
+                            I work at Odegaard Library as a technology consultant. I help people with various computer
+                            issues such as bootcamp, 3D printing and general computer diagnosis. <br>
+
+                            Alongside coding (which is talked about extensivly below), 
+                            I also play in the Univeristy of Washington Symphony Orchestra
+                             and Campus Phiharmonic Orchestra. <br>
+                            I love Dvořák. <br>
+
                         </p>
                  </div> 
              </div>
          
               <div id="work">
-                 <h1>works.</h1>
+                 <h1>My projects</h1>
 
                  <div class="project">
-                 <h2>project title 1</h2>
-                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.</div>
-                 <button class="btn_one">visit project</button>
+                 <h2>SeGuard</h2>
+                 <div> SeGuard is a project that classifies Android applications. My role in this project is
+                     to take the semantic graphs from my supervisor, and parse(featurize) it into vectors. 
+                     These vectors contains information (topological features) of the graph that we think is
+                     crucial for the classicication. Then, we feed it to the downstream random forest classifier.
+                     Up to now, we have about 70% of accuracy for binary classification (Answer the question of: is
+                     it a benign or malicious application).
+                 </div>
+                 <button class="btn_one" onclick= "window.location.href ='https://github.com/LuxiWang99/seguard-resources';">visit project</button>
                 </div>
 
                 <div class="project">
-                 <h2>project title 2</h2>
-                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum tincidunt nulla, id semper mi cursus ac. Fusce turpis urna, condimentum sit amet dolor at, vulputate ultrices massa. Vestibulum non euismod nulla, eu pretium risus. Curabitur porta molestie vulputate.
+                 <h2>Classical Music Genre Classification</h2>
+                 <div>
+                        Our team is working on a classical music 
+                        genre classifier. The classifier should be able to distinguish music from different time periods.
+                        e.g. romantic or baroque. 
+                        This project is also out pretty soon!
                  </div>
-                 <button class="btn_one">visit project</button>
-                 <button class="btn_two">code</button>
+                 <!-- <button class="btn_one"  >visit project</button> -->
+                 <!-- <button class="btn_two">code</button> -->
                 </div>
 
              </div>
          
               <div id="contact">
                  <h1>contact.</h1> 
-                 <form>
+                 <!-- <form>
                      <input type="text" placeholder="name" required>
                      <input type="email" placeholder="email" required><br>
                      <textarea placeholder="your message" required rows="5"></textarea><br>
                      <button class="btn_one">send</button>
-                 </form> 
+                 </form>  -->
                  <div id="details">
-                    <a class="btn_social"><i class="fas fa-phone"></i></a>
-                    <a class="btn_social"><i class="fas fa-at"></i></a>
-                    <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                    <a class="btn_social"><i class="fab fa-dribbble"></i></a>
+                    <!-- <a class="btn_social"><i class="fas fa-phone"></i></a>  -->
+                    <a class="btn_social"><i class="fas fa-at"></i></a> louis99 at uw.edu
+                    <!-- <a class="btn_social"><i class="fab fa-twitter"></i></a>
+                    <a class="btn_social"><i class="fab fa-dribbble"></i></a> -->
                  </div>   
              </div>
     </div>
     <div id="footer">
-        Luxi Wang <br><br> <a href="https://imfunniee.github.io">imfunniee</a>
+        Luxi Wang <br><br> <a href="https://imfunniee.github.io"></a>
     </div>
 <script src="index.js" type="text/javascript"></script>
 </body>
